@@ -9,16 +9,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock, Papper and Scissors</title>
 
+    <!-- GoogleFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
     <!--CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
 
-    <button id="rockBtn">Piedra</button>
-    <button id="papperBtn">Papel</button>
-    <button id="scissorsBtn">Tijeras</button>
+    <main class="container">
 
+      <div class="wrapper">
+
+	<section id="header" class="mx-auto">
+	  <div class="header-container text-center">
+	    <h1 class="header-title">Piedra, Papel y tijeras!</h1>
+	    <p>Estas listo para competir?</p>
+	    <div class="header-cto">
+	      <input type="number" class="header-input" id="header-input" placeholder="Cuantas rondas?">
+	      <button class="header-cto-button boton">Click</button>
+	    </div>
+	  </div>
+	</section>
+	<section id="body">
+	  <div id="body-botones" class="text-center my-5">
+	    <button id="rockBtn" class="bodyBtn boton"><i class="far fa-hand-rock"></i> Piedra</button>
+	    <button id="papperBtn" class="bodyBtn boton"><i class="far fa-hand-paper"></i> Papel</button>
+	    <button id="scissorsBtn" class="bodyBtn boton"><i class="far fa-hand-scissors"></i> Tijeras</button>
+	  </div>
+	</section>
+
+      </div>
+
+    </main>
+    <!--
+    -->
 
     <script src="assets/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
