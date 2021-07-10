@@ -10,6 +10,11 @@ const rockBtn = document.getElementById('rockBtn');
 const papperBtn = document.getElementById('papperBtn');
 const scissorsBtn = document.getElementById('scissorsBtn');
 
+let numeroRondas = document.getElementById('header-input');
+
+let ronda = document.getElementById('ronda');
+let marcador = document.getElementById('marcador');
+let resultadoFinal = document.getElementById('resultadoFinal');
 
 rockBtn.addEventListener('click', function() {
   game(rock);
@@ -21,6 +26,8 @@ scissorsBtn.addEventListener('click', function() {
   game(scissors);
 })
 
+
+
 // Funcion que determina los parametros del juego
 function game(userOption) {
   // El resutado de la maquina sera aleatorio entre 1 y 3
@@ -31,13 +38,16 @@ function game(userOption) {
   //Imprimir en pantalla quien ha ganado
   switch(result) {
     case tie:
-	alert('Empate!');
+	console.log('Empate!');
+	resultadoFinal.innerHTML = `Empate!`;
 	break;
     case win:
-	alert('Ganaste!');
+	console.log('Ganaste!');
+	resultadoFinal.innerHTML = `Buena suerte! Ganaste!`;
 	break;
     case lost:
-	alert('Perdiste!');
+	console.log('Perdiste!');
+	resultadoFinal.innerHTML = `Que mal! Perdiste!`;
 	break;
   }
 }
