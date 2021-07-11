@@ -74,7 +74,12 @@ main {
   font-size: 5rem;
   font-weight: 700;
   color: white;
-  margin: 0;
+  margin: 10px 0;
+}
+
+.ronda {
+  color: white;
+  font-size: 1.6rem;
 }
 
 .header-container p {
@@ -87,7 +92,7 @@ main {
 
 .header-cto {
   display: flex;
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 input[type=number] {
@@ -104,6 +109,15 @@ input[type=number] {
   margin: 0 20px;
 }
 
+/* MARCADORES */
+.panel-result {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--red);
+}
+/* MARCADORES END */
+
 .boton {
   background-color: var(--red);
   border: none;
@@ -111,13 +125,18 @@ input[type=number] {
   color: white;
   text-transform: uppercase;
   font-weight: 700;
-  padding: 0 30px;
+  padding: 5px 30px;
 }
 
 .boton:hover {
   background-color: var(--red-dark);
 }
 
+@media screen and (max-width:991px) {
+  .boton {
+    margin: 10px;
+  }
+}
 
 #body-target {
   padding: 10px 20px;
@@ -139,6 +158,7 @@ input[type=number] {
   font-size: 2rem;
   padding: 10px 50px;
   width: 100%;
+  margin: 5px 0;
 }
 /* BODY BOTONES END */
 

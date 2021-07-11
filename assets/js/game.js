@@ -13,6 +13,7 @@ let rondas = 0
 const rounds = () => {
   rondas = document.getElementById('header-input').value;
   if ( rondas > 0 ) {
+    ronda.innerHTML = `Preparate para jugar ${rondas} rondas contra la maquina!`
     console.log(rondas);
     return rondas;
   } else {
@@ -25,6 +26,9 @@ let optionMachine = Math.floor(Math.random() * 3);
   if ( rondas > 0 ) {
     calcResult(userOption, optionMachine)
     rondas--
+  }
+  if ( rondas === 0 ) {
+    alert(`Se acabaron tus rondas. Ingresa un nuevo numero para seguir jugando.`);
   }
 }
 

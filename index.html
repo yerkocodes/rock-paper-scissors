@@ -2,7 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="author" content="...">
+    <meta name="author" content="Yerko Cortes">
     <meta name="description" content="...">
     <meta name="keywords" content="...">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -30,30 +30,33 @@
 	<section id="header" class="mx-auto">
 	  <div class="header-container text-center">
 	    <h1 class="header-title">Piedra, Papel y tijeras!</h1>
-	    <p>Estas listo para competir?</p>
-	    <div class="header-cto">
+	  <h2 class="ronda">Especifica en el cuadro cuantas rondas deseas jugar.</h2>
+	    <div class="header-cto row">
+	      <div class=" col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
 	      <input type="number" class="header-input" id="header-input" placeholder="Cuantas rondas?">
+	      </div>
+	      <div class=" col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
 	      <button id="rondasBtn" class="header-cto-button boton" onclick="rounds();">Comencemos!</button>
+	      </div>
 	    </div>
 	  </div>
 	</section>
 	<section id="body-contador">
 	  <div class="contador text-center">
-	  <h2 id="ronda">Ronda 1</h2>
-	  <h2 id="marcador">Marcador</h2>
-	  <h2 id="resultadoFinal">Resultado final</h2>
+	  <h2 id="resultadoFinal" class="panel-result">Resultado</h2>
+	  <h2 id="ronda"></h2>
 	  </div>
 	</section>
 	<section id="body-target">
 	  <div id="body-botones" class="row text-center">
 	    <div class="btn1 col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-	    <button id="rockBtn" onclick="game(rock)" class="bodyBtn boton"><i class="far fa-hand-rock"></i> Piedra</button>
+	    <button id="Btn" onclick="game(rock)" class="bodyBtn boton"><i class="far fa-hand-rock"></i> Piedra</button>
 	    </div>
 	    <div class="btn2 col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-	    <button id="paperBtn" onclick="game(paper)" class="bodyBtn boton"><i class="far fa-hand-paper"></i> Papel</button>
+	    <button id="Btn" onclick="game(paper)" class="bodyBtn boton"><i class="far fa-hand-paper"></i> Papel</button>
 	    </div>
 	    <div class="btn3 col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-	    <button id="scissorsBtn" onclick="game(scissors)" class="bodyBtn boton"><i class="far fa-hand-scissors"></i> Tijeras</button>
+	    <button id="Btn" onclick="game(scissors)" class="bodyBtn boton"><i class="far fa-hand-scissors"></i> Tijeras</button>
 	    </div>
 	  </div>
 	</section>
